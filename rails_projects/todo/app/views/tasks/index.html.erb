@@ -1,0 +1,7 @@
+<h1>Tasks</h1>
+<%= link_to 'new', new_task_path %>
+<ul>
+  <% @tasks.each do |task| %>
+      <%= render 'completed', task: task %>
+  <% end %>
+</ul>
